@@ -1,0 +1,38 @@
+{
+    "name": "@jojovms/tilt-card-core",
+    "version": "0.0.1",
+    "description": "Tiltō: A premium 3D tilt interaction effect for your cards.",
+    "keywords": [
+        "tilto",
+        "tilt-card",
+        "3d",
+        "hover",
+        "ui",
+        "framework",
+        "jojovms"
+    ],
+    "author": "Shijo Shaji (https://shijoshaji.in)",
+    "homepage": "https://shijoshaji.in",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shijoshaji/tilt-card.git",
+        "directory": "core"
+    },
+    "bugs": {
+        "url": "https://github.com/shijoshaji/tilt-card/issues"
+    },
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "vite build"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "typescript": "^5.3.3",
+        "vite": "^5.0.10",
+        "vite-plugin-dts": "^3.6.4"
+    }
+}

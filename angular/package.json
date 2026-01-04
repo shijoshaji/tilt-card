@@ -1,0 +1,51 @@
+{
+    "name": "@jojovms/angular-tilt-card",
+    "version": "0.0.1",
+    "description": "Tiltō: A premium 3D tilt interaction effect for your cards (Angular wrapper).",
+    "keywords": [
+        "tilto",
+        "tilt-card",
+        "angular",
+        "3d",
+        "hover",
+        "ui",
+        "framework",
+        "jojovms"
+    ],
+    "author": "Shijo Shaji (https://shijoshaji.in)",
+    "homepage": "https://shijoshaji.in",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shijoshaji/tilt-card.git",
+        "directory": "angular"
+    },
+    "bugs": {
+        "url": "https://github.com/shijoshaji/tilt-card/issues"
+    },
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "peerDependencies": {
+        "@angular/core": "^17.0.0",
+        "@angular/common": "^17.0.0",
+        "rxjs": "^7.8.0"
+    },
+    "dependencies": {
+        "@jojovms/tilt-card-core": "*"
+    },
+    "scripts": {
+        "build": "vite build"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "vite": "^5.0.10",
+        "vite-plugin-dts": "^3.6.4",
+        "@angular/core": "^17.0.0",
+        "@angular/common": "^17.0.0",
+        "rxjs": "^7.8.0",
+        "zone.js": "^0.14.0",
+        "typescript": "^5.3.3"
+    }
+}
