@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Tiltō, TiltOptions } from '@jojovms/tilt-card-core';
+import { Tilto, TiltOptions } from '@jojovms/tilt-card-core';
 
 export interface TiltProps extends TiltOptions {
     children: React.ReactNode;
@@ -9,11 +9,11 @@ export interface TiltProps extends TiltOptions {
 
 export const Tilt: React.FC<TiltProps> = ({ children, className, style, ...options }) => {
     const elRef = useRef<HTMLDivElement>(null);
-    const tiltRef = useRef<Tiltō | null>(null);
+    const tiltRef = useRef<Tilto | null>(null);
 
     useEffect(() => {
         if (elRef.current) {
-            tiltRef.current = new Tiltō(elRef.current, options);
+            tiltRef.current = new Tilto(elRef.current, options);
         }
         return () => {
             tiltRef.current?.destroy();

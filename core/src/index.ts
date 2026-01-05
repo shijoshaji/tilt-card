@@ -1,2 +1,2 @@
-export { Tiltō } from './tilt';
+export { Tilto } from './tilt';
 export type { TiltOptions } from './tilt';

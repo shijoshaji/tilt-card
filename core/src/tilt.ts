@@ -6,7 +6,7 @@ export interface TiltOptions {
     glareMaxOpacity?: number;
 }
 
-export class Tiltō {
+export class Tilto {
     private element: HTMLElement;
     private options: TiltOptions;
     private glareElement: HTMLElement | null = null;

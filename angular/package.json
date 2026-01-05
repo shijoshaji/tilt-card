@@ -1,6 +1,6 @@
 {
     "name": "@jojovms/angular-tilt-card",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Tiltō: A premium 3D tilt interaction effect for your cards (Angular wrapper).",
     "keywords": [
         "tilto",

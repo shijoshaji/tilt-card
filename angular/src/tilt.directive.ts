@@ -1,12 +1,12 @@
 import { Directive, ElementRef, Input, OnInit, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
-import { Tiltō, type TiltOptions } from '@jojovms/tilt-card-core';
+import { Tilto, type TiltOptions } from '@jojovms/tilt-card-core';
 
 @Directive({
     selector: '[tilt]'
 })
 export class TiltDirective implements OnInit, OnDestroy, OnChanges {
     @Input('tilt') options: TiltOptions = {};
-    private tiltInstance: Tiltō | null = null;
+    private tiltInstance: Tilto | null = null;
 
     constructor(private el: ElementRef) { }
 
@@ -22,7 +22,7 @@ export class TiltDirective implements OnInit, OnDestroy, OnChanges {
     }
 
     private initTilt() {
-        this.tiltInstance = new Tiltō(this.el.nativeElement, this.options);
+        this.tiltInstance = new Tilto(this.el.nativeElement, this.options);
     }
 
     ngOnDestroy() {
